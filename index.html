@@ -4,34 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Ibrahim's Porfolio</title>
 </head>
 <body>
     <section class="home">
     <header class="header">
-        <h1>Ibrahim<span class="surname">Mohamed</span></h1>
+        <h1>Ibrahim<span class="surname"> Mohamed</span></h1>
         <div>
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" class="link">Home</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" class="link">About</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" class="link">Skills</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" class="link">Projects</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact me</a>
+                    <a href="#contact" class="link">Contact me</a>
                 </li>
             </ul>
         </div>
     </header>
     <div class="hero">
-        <h1 class="h1">Hi, I'm a <span class="animate"></span></h1>
+        <h2 class="h2">Hi, I'm a <span class=" animate"></span></h2>
+        
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <script>
+            var typed = new Typed(".animate", {
+            strings: ["coder.", "student.", "aspiring web developer.", "football fan."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+            });
+        </script>
+
         <p class="student" id="student">
         An engineering graduate with a passion for web development.
         </p>
@@ -45,7 +59,7 @@
                   class="linkedin"
                   aria-label="LinkedIn"
                   rel="noopener"
-                  >LinkedIn<i class="linkedin-link"></i
+                  >LinkedIn<i class="fa fa-linkedin-square" style="font-size:24px"></i
                 ></a>
               </li>
               <li>
@@ -55,7 +69,7 @@
                   class="github"
                   aria-label="GitHub"
                   rel="noopener"
-                  >GitHub<i class="github-link"></i
+                  >GitHub<i class="fa fa-github" style="font-size:24px"></i
                 ></a>
               </li>
               <li>
@@ -65,7 +79,7 @@
                   class="email"
                   aria-label="Email"
                   rel="noopener"
-                  >Email<i class="email-link"></i
+                  >Email<i class="fa fa-envelope" style="font-size:24px"></i
                 ></a>
               </li>
             </ul>
@@ -73,8 +87,8 @@
     </section>
     <section id="about">
         <div class="container-about">
-          <div class="about-me" id="about-me">
-            <h2><span>About</span> Me</h2>
+          <div class="sub-heading" id="about-me">
+            <h3><span>About</span> Me</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
@@ -91,8 +105,8 @@
       </section>
 
       <section id="skills">
-        <div class="header" id="header">
-          <h2>My <span>Skills</span></h2>
+        <div class="sub-heading" id="my-skills">
+          <h3>My <span>Skills</span></h3>
         </div>
   
         <div class="container" id="container">
@@ -120,15 +134,15 @@
       </section>
       
       <section id="projects">
-        <div class="header" id="header">
-            <h2>My <span>Projects</span></h2>
+        <div class="sub-heading" id="my-projects">
+            <h3>My <span>Projects</span></h3>
         </div>
             <p>My projects will go here.</p>
       </section>
 
       <section id="contact">
-        <div class="header" id="header">
-            <h2>Contact <span>Me</span></h2>
+        <div class="sub-heading" id="contact-me">
+            <h3>Contact <span>Me</span></h3>
         </div>
         <ul>
             <li>
