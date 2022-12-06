@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-    padding: 10px;  
+    padding: 10px;
     background-color: black;
     color: white;
     position: fixed;
@@ -79,8 +79,8 @@ body {
     position: absolute;
     left: -11rem;
     -webkit-animation: social-links 0.5s;
-            animation: social-links 0.5s;
-}  
+    animation: social-links 0.5s;
+}
 
 .socials ul li a {
     text-decoration: none;
@@ -94,26 +94,26 @@ body {
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
-  
+
 .socials ul li a i {
     padding-left: 24px;
 }
-  
+
 .socials ul li .linkedin {
     background: #0077b5;
 }
-  
+
 .socials ul li .github {
     background: #2e3031;
 }
-  
+
 .socials ul li .email {
     background: #e44e58;
 }
 
 .socials ul li a:hover {
     -webkit-transform: translate(120px, 0);
-            transform: translate(120px, 0);
+    transform: translate(120px, 0);
 }
 
 .arrow {
@@ -124,9 +124,22 @@ body {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-30px);} 
-    60% {transform: translateY(-15px);} 
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 h3 {
@@ -142,11 +155,11 @@ h3 {
     width: 100%;
     display: grid;
     grid-template-columns: 12% 13% 75%;
-    grid-template-areas: 
-    "heading img txt";
+    grid-template-areas:
+        "heading img txt";
 }
 
-.title-left{
+.title-left {
     grid-area: heading;
     padding: 15px;
     display: flex;
@@ -156,7 +169,7 @@ h3 {
 }
 
 #img-ibrahim {
-    grid-area: img ;
+    grid-area: img;
     border-left: 3px solid black;
     padding: 15px;
 }
@@ -176,8 +189,8 @@ h3 {
     color: white;
     display: grid;
     grid-template-columns: 12% 88%;
-    grid-template-areas: 
-    "heading items";
+    grid-template-areas:
+        "heading items";
 }
 
 .skills-container {
@@ -203,7 +216,7 @@ h3 {
 }
 
 .skills-img {
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -214,8 +227,51 @@ h3 {
     margin-top: 15px;
 }
 
-#projects {
+#work {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    grid-template-areas:
+    "heading work";
+}
 
+.projects {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-area: work;
+    border-left: 3px solid black;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px 300px;
+    display: grid;
+    grid-template-areas: 
+    "P1 P1"
+    "P2 P3"
+    "P4 P5";
+}
+
+.P1 {
+    grid-area: P1;
+    background-image: url("../images/Project-1.png");
+}
+
+.P2 {
+    grid-area: P2;
+    background-image: url("../images/Project-2.png");
+}
+
+.P3 {
+    grid-area: P3;
+    background-image: url("../images/Project-3.png");
+}
+
+.P4 {
+    grid-area: P4;
+    background-image: url("../images/Project-4.png");
+}
+
+.P5 {
+    grid-area: P5;
 }
 
 #contact {
@@ -225,11 +281,11 @@ h3 {
     color: white;
     display: grid;
     grid-template-columns: 12% 88%;
-    grid-template-areas: 
-    "heading info";
+    grid-template-areas:
+        "heading info";
 }
 
-.info {    
+.info {
     margin-top: 20px;
     margin-bottom: 20px;
     grid-area: info;
