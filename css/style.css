@@ -17,13 +17,11 @@ body {
 }
 
 .header {
-    padding: 10px;
+    width: 100%;
     background-color: black;
     color: white;
-    position: fixed;
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .header h1 {
@@ -242,7 +240,9 @@ h3 {
     grid-area: work;
     border-left: 3px solid black;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 500px 300px 300px;
+    column-gap: 10px;
+    row-gap: 15px;
     display: grid;
     grid-template-areas: 
     "P1 P1"
@@ -253,25 +253,76 @@ h3 {
 .P1 {
     grid-area: P1;
     background-image: url("../images/Project-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.P1:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
 }
 
 .P2 {
     grid-area: P2;
     background-image: url("../images/Project-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.P2:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
 }
 
 .P3 {
     grid-area: P3;
     background-image: url("../images/Project-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.P3:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
 }
 
 .P4 {
     grid-area: P4;
     background-image: url("../images/Project-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.P4:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
 }
 
 .P5 {
     grid-area: P5;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.P5:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
 }
 
 #contact {
