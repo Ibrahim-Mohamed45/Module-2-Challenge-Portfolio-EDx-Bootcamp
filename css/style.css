@@ -8,11 +8,12 @@
 .home {
     background-color: black;
     height: 100vh;
+    width: 100%;
 }
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Amatic SC', cursive;
     background-color: black;
     color: white;
 }
@@ -30,7 +31,7 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: 20px;
 }
 
@@ -47,7 +48,7 @@
 .hero h2 {
     text-align: center;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: calc(20px + 3.2vw);
 }
 
@@ -58,7 +59,7 @@
 .hero p {
     color: white;
     line-height: 1.6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Amatic SC', cursive;
     font-size: calc(14px + 0.5vw);
     text-align: center;
     padding: 8px;
@@ -69,18 +70,19 @@
 }
 
 .socials {
-    top: 65%;
+    top: 60%;
     position: absolute;
-    left: -11.5rem;
+    left: -11rem;
     -webkit-animation: social-links 0.5s;
             animation: social-links 0.5s;
 }  
 
-  .socials ul li a {
+.socials ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 1.2rem;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    padding: 20px;
     display: block;
     width: 200px;
     text-align: right;
@@ -90,7 +92,7 @@
 }
   
 .socials ul li a i {
-    padding-left: 1.5rem;
+    padding-left: 24px;
 }
   
 .socials ul li .linkedin {
@@ -108,4 +110,67 @@
 .socials ul li a:hover {
     -webkit-transform: translate(120px, 0);
             transform: translate(120px, 0);
-  }
+}
+
+#about {
+    background-color: darkgrey;
+    height: 55vh;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+#skills {
+    background-color: black;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+#projects {
+    background-color: darkgrey;
+    font-family: 'Amatic SC', cursive;
+}
+
+#contact {
+    background-color: black;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+h3 {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: calc(20px + 0.5vw);
+}
+
+h3 span {
+    color: blue;
+}
+
+.container-about {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    display: grid;
+    grid-template-areas: 
+    "img"
+    "txt";
+}
+
+#about-me {
+    grid-area: txt;
+}
+
+#img-ibrahim {
+    grid-area: img;
+}
+
+.container-about img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
