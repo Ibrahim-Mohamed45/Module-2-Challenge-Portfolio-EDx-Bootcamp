@@ -9,9 +9,8 @@
     <title>Ibrahim's Porfolio</title>
 </head>
 <body>
-    <section class="home">
     <header class="header">
-        <h1>Ibrahim<span class="surname"> Mohamed</span></h1>
+        <h1>Ibrahim Mohamed</h1>
         <div>
             <ul>
                 <li>
@@ -32,7 +31,8 @@
             </ul>
         </div>
     </header>
-    <div class="hero">
+    <section id="home">
+        <div class="hero">
         <h2 class="h2">Hi, I'm a <span class=" animate"></span></h2>
         
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -45,10 +45,6 @@
             loop: true,
             });
         </script>
-
-        <p class="description">
-        An engineering graduate with a passion for web development.
-        </p>
         </div>
         <div class="socials" id="socials">
             <ul>
@@ -84,11 +80,23 @@
               </li>
             </ul>
           </div>
+          <div class="arrow">
+            <i class="fa fa-angle-double-down" style="font-size:48px;color:white"></i>
+          </div>
     </section>
     <section id="about">
-        <h3>About <span>Me</span></h3>
-        <div class="container-about">
-            <p id="about-me">
+        <aside class="title-left">
+        <h3>About Me</h3>
+        </aside>
+            <div id="img-ibrahim">
+              <img
+              src="./images/Image-of-me.png"
+              width="150px"
+              height="216px"
+              alt="Image of Ibrahim"
+              />
+            </div>  
+            <p class="text">
               Hi, my name is Ibrahim and I'm an aspiring web developer who is intrested 
               in all things Javascript. I am currently undertaking the EDx Trilogy Skills 
               Bootcamp in Front-End Web Development where I am learning the skills required 
@@ -98,20 +106,13 @@
               I enjoy playing and watching football & basketball, watching tv shows 
               and travelling.
             </p>
-          <div id="img-ibrahim">
-            <img
-              src="./images/Image-of-me.png"
-              width="150px"
-              height="216px"
-              alt="Image of Ibrahim"
-            />
-          </div>
-        </div>
       </section>
 
       <section id="skills">
         
-        <h3>My <span>Skills</span></h3>
+        <aside class="title-left">
+        <h3>My Skills</h3>
+        </aside>
   
         <div class="skills-container">
           <div class="skills-sub-container">
@@ -141,23 +142,21 @@
       </section>
       
       <section id="projects">
-            <h3>My <span>Projects</span></h3>
+            <h3>My Projects</h3>
             <p>My projects will go here.</p>
       </section>
 
       <section id="contact">
-            <h3>Contact <span>Me</span></h3>
-        <ul>
-            <li>
-                <a href="tel:+447939809870" target="_blank">+44 7939 809870</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ibrahim-mohamed-15ab4221a/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-              <a href="mailto:ibrahim.mohamed1218@gmail.com" target="_blank">Email</a>
-            </li>
-          </ul>
+
+        <aside class="title-left">
+        <h3>Contact Me</h3>
+        </aside>
+        
+        <div class="info">
+            <a href="tel:+447939809870" target="_blank">+44 7939 809870</a>
+            <a href="https://www.linkedin.com/in/ibrahim-mohamed-15ab4221a/" target="_blank">LinkedIn</a>
+            <a href="mailto:ibrahim.mohamed1218@gmail.com" target="_blank">Email</a>
+        </div>
       </section>    
 </body>
 </html>
