@@ -122,6 +122,8 @@
 
 #skills {
     background-color: black;
+    height: 55vh;
+    width: 100%;
     font-family: 'Amatic SC', cursive;
     color: white;
 }
@@ -174,3 +176,31 @@ h3 span {
     border: 1px solid black;
 }
 
+.skills-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-sub-container {
+    width: 15%;
+    height: 40vh;
+    background-color: darkgray;
+}
+
+.skills-sub-container ul {
+    list-style: none;
+    font-size: medium;
+}
+
+.skills-img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.sub-heading {
+    font-size: x-large;
+    margin-top: 15px;
+}
