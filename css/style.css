@@ -306,7 +306,7 @@ h3 {
 
 #P5 {
     grid-area: P5;
-
+    background-image: url("../images/Project-5.jpg");
     border-radius: 30px;
     cursor: pointer;
     filter: brightness(50%);
@@ -327,7 +327,7 @@ h3 {
     text-decoration: none;
 }
 
-.sub-heading{
+.grid-header{
     padding: 5px;
     color: white;
     font-size: 1.5em;
@@ -336,6 +336,7 @@ h3 {
     border-radius: 25px;
     text-align: center;
 }
+
 #contact {
     background-color: black;
     height: 20vh;
