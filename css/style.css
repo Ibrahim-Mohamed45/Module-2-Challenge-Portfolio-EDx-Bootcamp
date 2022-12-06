@@ -250,7 +250,7 @@ h3 {
     "P4 P5";
 }
 
-.P1 {
+#P1 {
     grid-area: P1;
     background-image: url("../images/Project-1.png");
     background-size: cover;
@@ -260,71 +260,82 @@ h3 {
     filter: brightness(50%);
 }
 
-.P1:hover{
+#P1:hover{
     filter:brightness(100%);
     transition: filter 0.7s ease-in;
 }
 
-.P2 {
+#P2 {
     grid-area: P2;
     background-image: url("../images/Project-2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 30px;
     cursor: pointer;
     filter: brightness(50%);
 }
 
-.P2:hover{
+#P2:hover{
     filter:brightness(100%);
     transition: filter 0.7s ease-in;
 }
 
-.P3 {
+#P3 {
     grid-area: P3;
     background-image: url("../images/Project-3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 30px;
     cursor: pointer;
     filter: brightness(50%);
 }
 
-.P3:hover{
+#P3:hover{
     filter:brightness(100%);
     transition: filter 0.7s ease-in;
 }
 
-.P4 {
+#P4 {
     grid-area: P4;
     background-image: url("../images/Project-4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 30px;
     cursor: pointer;
     filter: brightness(50%);
 }
 
-.P4:hover{
+#P4:hover{
     filter:brightness(100%);
     transition: filter 0.7s ease-in;
 }
 
-.P5 {
+#P5 {
     grid-area: P5;
 
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 30px;
     cursor: pointer;
     filter: brightness(50%);
 }
 
-.P5:hover{
+#P5:hover{
     filter:brightness(100%);
     transition: filter 0.7s ease-in;
 }
 
+.project-links{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    align-content: end;
+    display: grid;
+    text-decoration: none;
+}
+
+.sub-heading{
+    padding: 5px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 25px;
+    text-align: center;
+}
 #contact {
     background-color: black;
     height: 20vh;
