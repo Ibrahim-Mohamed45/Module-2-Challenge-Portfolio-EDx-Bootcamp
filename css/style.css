@@ -122,27 +122,20 @@ body {
     top: 90%;
     position: absolute;
     left: 50rem;
-    animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
+    animation: fadeDown 1s ease-in both ;
+ }
+ 
+ @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-20px);
+    }
     100% {
-        transform: translateY(0);
+       opacity: 1;
+       -webkit-transform: translateY(0);
     }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
-    }
-}
+ }
+ 
 
 h3 {
     padding-left: 15px;
