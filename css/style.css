@@ -17,7 +17,7 @@ body {
 #home {
     background-color: black;
     display: flex;
-    height: 100vh;
+    height: 93vh;
     width: 100%;
 }
 
@@ -127,7 +127,7 @@ body {
 .arrow {
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom: 3%;
     animation: bounce 1s infinite;
 }
 
@@ -248,7 +248,7 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 20px;
     grid-area: work;
     border-left: 3px solid black;
     grid-template-columns: 50% 50%;
@@ -351,7 +351,7 @@ h3 {
 
 #contact {
     background-color: black;
-    height: 20vh;
+    height: 100%;
     width: 100%;
     color: white;
     display: grid;
@@ -449,5 +449,107 @@ h3 {
 
     #contact {
         grid-template-columns: 19% 81%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .socials {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header h1 {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+
+    .header div {
+        font-size: 20px;
+        margin-right: 0px;
+    }
+    
+    #skills {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-areas:
+            "heading"
+            "items";
+    }
+
+    .skills-heading {
+        border-bottom: 3px solid white;
+    }
+    
+    .skills-container {
+        border-left: none;
+    }
+
+    .skills-sub-container {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero {
+        position: absolute;
+        top: 30%;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+    
+    .skills-sub-container {
+        width: 40%;
+    }
+    
+    #work {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "heading"
+            "work";
+    }
+    
+    .projects {
+        border-left: none;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 150px 150px 150px 150px;
+        display: grid;
+        grid-template-areas:
+            "P1"
+            "P2" 
+            "P3"
+            "P4"
+            "P5" ;
+    }
+
+    .work-heading {
+        border-bottom: 3px solid black;
+    }
+    
+    #contact {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-areas:
+            "heading"
+            "info";
+    }
+
+    .contact-heading {
+        border-bottom: 3px solid white;
+    }
+
+    .info {
+        border-left: none;
     }
 }
