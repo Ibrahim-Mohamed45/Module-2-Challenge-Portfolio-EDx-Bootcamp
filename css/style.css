@@ -18,7 +18,7 @@ body {
 #home {
     background-color: black;
     display: flex;
-    height: 93vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -248,13 +248,13 @@ h3 {
 .projects {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     grid-area: work;
     border-left: 3px solid black;
     grid-template-columns: 50% 50%;
     grid-template-rows: 500px 300px 300px;
-    column-gap: 10px;
+    column-gap: 15px;
     row-gap: 15px;
     display: grid;
     grid-template-areas:
