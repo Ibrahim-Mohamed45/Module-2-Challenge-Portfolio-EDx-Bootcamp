@@ -18,7 +18,7 @@ My live portfolio can be found here: <a href="https://ibrahim-mohamed45.github.i
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
 The porfolio should look like this gif:
-![Image of what portfolio should look like](images\01-css-challenge-demo.gif)
+<img src="images\01-css-challenge-demo.gif" alt="Image of what the porfolio should look like.">
 
 ## Installation
 
